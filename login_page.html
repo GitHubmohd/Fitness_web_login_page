@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="login_page.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo"></div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Supplement</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+      <div class="search"><input type="search" placeholder="search" /></div>
+    </header>
+    <div class="container">
+      <form
+        action="https:/javascript.com"
+        name="myform"
+        onsubmit="return validation()"
+      >
+        <h2>Welcome</h2>
+        <input type="text" name="name" placeholder="Your name" /><br />
+        <input type="text" name="number" placeholder="Number" /><span
+          id="numloc"
+        ></span
+        ><br />
+        <input
+          type="password"
+          name="password"
+          placeholder="Your password"
+        /><br />
+        <input
+          type="password"
+          name="password2"
+          placeholder="Re-enter password"
+        /><br />
+        <div class="submit-btn-container">
+          <input id="button" type="submit" value="Register" />
+        </div>
+      </form>
+    </div>
+    <footer>copy right &copy; 2024</footer>
+    <script src="login_page.js"></script>
+  </body>
+</html>

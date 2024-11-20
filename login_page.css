@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(image/background-image.jpg) no-repeat;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+header {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.logo {
+  background: url("image/fitness-logo.png") no-repeat;
+  background-size: cover;
+  height: 90px;
+  width: 100px;
+  margin-top: 10px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  margin: 0 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+nav ul li a:hover {
+  color: rgb(160, 158, 158);
+}
+.search input {
+  border-radius: 16px;
+  padding: 5px 10px;
+  text-align: center;
+  border: none;
+}
+.container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  color: white;
+}
+.container h2 {
+  text-align: center;
+  font-size: 35px;
+}
+.container input {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+}
+.container .submit-btn-container {
+  display: flex;
+  justify-content: center;
+}
+#button {
+  margin-top: 20px;
+  width: 30%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #5cb85c;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#button:hover {
+  background-color: rgb(201, 199, 199);
+}
+footer {
+  position: absolute;
+  bottom: -30px;
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+  background-color: black;
+  padding: 20px 0;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .container {
+    margin: 50px 20px;
+    padding: 10px;
+  }
+  header {
+    flex-direction: column;
+    height: auto;
+  }
+  nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .search {
+    margin-top: 10px;
+  }
+  footer {
+    position: absolute;
+    bottom: -60px;
+  }
+}
